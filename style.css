@@ -1,0 +1,106 @@
+.container{
+
+}
+
+
+nav ul {
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
+.home{
+    background-color: red;
+}
+.home:hover{
+    background-color: grey;
+}
+.container header ul a {
+    text-decoration: none;
+    color: white;
+ 
+    
+}
+.container header ul li{
+display: inline;
+
+
+
+
+}
+header a{
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: gray;
+
+}
+
+.detailfForm{
+    background-color: #dbd2d2;
+    
+   margin-right: 50px;
+}
+
+.formData{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    padding-right: 150px;
+    
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 50px;
+margin-right: 50px;
+}
+
+
+.leftsec{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 100px;
+   
+}
+
+.rightsec{
+    width: fit-content;
+    height: fit-content;
+    
+   
+}
+.flex-img{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.flex-img img{
+      height: 170px;
+      width: 170px;
+      padding:10px;
+     
+     
+}
+.flex-img img:hover{
+transform: rotate3d(0,1,0 ,180deg)
+}
+table td{
+    padding-right: 300px;
+}
+table tr{
+   
+    display: flex;
+    flex-wrap: nowrap;    
+
+
+}
+
+
+table img{
+    height: 10px;
+    width: 10px;
+}
