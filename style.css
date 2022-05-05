@@ -1,4 +1,15 @@
 
+*{
+    margin:0;
+    padding: 0;
+}
+#checkbtn{
+    display: none;
+}
+
+i{
+    visibility: hidden;
+}
 
 
 nav ul {
@@ -15,20 +26,20 @@ nav ul {
 .home:hover{
     background-color: grey;
 }
- header ul a {
+ nav ul a {
     text-decoration: none;
     color: white;
  
     
 }
-header ul li{
+nav ul li{
 display: inline;
 
 
 
 
 }
-header a{
+nav a{
     padding: 10px;
 }
 
@@ -37,29 +48,34 @@ nav a:hover{
 
 }
 
-
+#hamburgerNav{
+  visibility: hidden;
+}
 
 
 .Form{
     background-color: #dbd2d2;
     
+   padding-left: 5px;
    
-    padding: 8px;
-   margin-right: 50px;
+    padding: 10px;
+    margin-right: 50px;
+    
 }
 .formLebel{
     margin: 10px;
     margin-bottom: 10px;
     padding: 5px;
-    padding-right: 150px;
+    width: 90%;
 }
 
 .formInput{
+   
     display: block;
     margin: 10px;
     margin-bottom: 10px;
     padding: 5px;
-    padding-right: 150px;
+    width: 90%;
     outline: none;
     
 }
@@ -69,33 +85,36 @@ nav a:hover{
     outline: none;
     border: none;
     margin-top: 15px;
-    padding-right: 125px;
+    width: 95%;
     padding-top: 8px;
     padding-bottom: 8px;
-   padding-left:125px ;
+   padding-left:10% ;
    
 }
 
+#formBtn:hover{
+    background-color: green;
+}
 
-.flex-container{
+main{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     margin-left: 50px;
-margin-right: 50px;
+    margin-right: 50px;
 
 }
 
 
     
   
-.flexi{
+.card-container{
     display: flex;
-    flex-wrap: wrap;
+    
    
-    text-align: center;
+   
 }
-.flexi img{
+.card-container img{
     height: 150px;
     width: 150px;
 }
@@ -108,11 +127,12 @@ margin-right: 50px;
     height: 150px;
     padding-right: 5px;
     perspective: 1000px;
+    margin-top: 30px;
     
     
   }
   
-  .flip-card-inner {
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -140,110 +160,176 @@ margin-right: 50px;
   }
   
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #3482b6;
     color: white;
     transform: rotateY(180deg);
   }
  
-  
-
-
-
-
-    
-
-table th{
-    padding-right: 325px;
-    
-}
-table td{
-    padding-right: 300px;
-    
+  .name{
+    position: relative;
+    width: 100%;
+    bottom: 36px;
+    text-align: center;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: rgba(0, 0, 0, 0.459);
 }
 
-@media (max-width:800px){
-    table th{
-        padding-right: 30px;
-        
-    }
-    table td{
-        padding-right: 25px;
-        
-    }
+ 
+.flip-card-back h3 {
+    
+    padding-top:50px;
+   
 }
 
+
+.table-flex{
+    padding: 10px;
+}
+table{
+    margin-top: 10px;
+}
 
 table img{
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
+    
+
+table th{
+    padding-right: 280px;
+    
+    
+}
+
+
+
+table td{
+    padding-right:280;
+   
+    
+}
+table,td,th{
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+
+tr:hover{
+    background-color: rgb(213, 200, 200);
+}
+
+
+
+
+
+
 
 footer{
     background-color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: lid;
+    padding-bottom: lid;
     text-align: center;
     color: white;
 }
 
+
+.footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer h3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 footer p{
-    text-align: center;
+   
     color: white;
-    display: inline;
     
+    padding: 6px;
+    text-align: justify;
 }
 
-.flex-para{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
 
-i{
-    visibility: hidden;
-}
 
-@media (max-width:600px){
-    #checkbox{
-        display: none;
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    i{
+        visibility: visible;
+        margin-left: 10px;
     }
+    .input{
+        visibility: hidden;
+        
+    }
+    table th{
+        padding-right: 30px;
+        
+    }
+    table td{
+        padding-right: 30px;
+        text-align: center;
+        font-size: 7pt;
+        
+    }
+    table td:hover{
+        font-size:15px ;
+    }
+    
 
-   i{
-       visibility: visible;
-   }
-   .input{
-       visibility: hidden;
+   .card-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+      
        
    }
-
-   .flex-nav{
-    position: relative;
-    background-color: #bbb;
-    width: 30%;
-   
-    
-    transition: 0.3s;
-     display: none;
+   #hamburgerNav{
      
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    left:0%;
+    width: fit-content;
+    z-index: 3;
+    box-shadow: 0px 0px 200px 0px rgb(59, 59, 59);
+    margin-left: 5px;
+    position: absolute;
+  
+    
+  }
+  #hamburgerNav li{
+      padding: 15px;
+      
+      border-bottom: 1px solid black;
+  
+  }
+  
+  #hamburgerNav li:hover{
+     background-color: #dbd2d2;
+  
+  }
+  #hamburgerNav a{
+      text-decoration: none;
+
+  }
+  
  
    
-    
-}
 
-.flex-input{
-    
-    border-top: 1px solid rgb(46, 43, 43);
-    border-bottom: 1px solid rgb(46, 43, 43);
-}
+
 
 }
 
-
-
-
-#checkbox{
-    display: none;
+#checkbtn:checked ~#hamburgerNav{
+    left: 0;
+   
 }
 
 
@@ -251,12 +337,10 @@ i{
 
 
 
-#checkbox:checked .flex-nav li a{
- display: block;
- background-color: red;
- color: red;
- 
-}
+
+
+
+
 
 
 

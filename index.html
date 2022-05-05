@@ -14,35 +14,39 @@
         <nav>
            
             <ul style="list-style-type: none;">
-                <li><label for="checkbox"><i class="fa-solid fa-bars"></i></label></li>
-                <li><input type="checkbox" id="checkbox"></li>
+                <li><label for="checkbtn"><i class="fa-solid fa-bars"></i></label></li>
+                <li><input type="checkbox" id="checkbtn"></li>
                 <li><a href="" >Contact Manager</a></li>
                 <li><a href="index.html" class="home input">Home</a></li>
                 <li><a href="about.html" class="input">About Us</a></li>
                 <li><a href="contact.html" class="input">Help</a></li>
             </ul>
-        </nav>
+        
 
-        <div class="flex-nav">
-            <ul>
-                <li><a href="index.html" class="flex-input">Home</a></li>
-                <li><a href="about.html" class="flex-input">About Us</a></li>
-                <li><a href="contact.html" class="flex-input">Help</a></li>
-            </ul>
-        </div>
-    <div class="container">
        
-        </header>
+           
+        </nav>
+        <ul id="hamburgerNav">
+            <li><a href="index.html" class="flex-input">Home</a></li>
+            <li><a href="about.html" class="flex-input">About Us</a></li>
+            <li><a href="contact.html" class="flex-input">Help</a></li>
+        </ul>
+    </header>
+    
+       
+        
 
 
-       <div class="flex-container">
+      
+    <main>
+
         <div class="leftSec">
             <form action="" class="Form">
                 <label for="" class="formLebel">Name</label>
                 
                 <input type="text" placeholder="Name" class="formInput">
                 <label for="" class="formLebel">Gender</label>
-                <select class="formInput" style="padding-right: 195px;">
+                <select class="formInput" style="padding-right: 350px;">
                     <option value="">--Select Gender--</option>
                     <option value="">Male</option>
                     <option value="">Female</option>
@@ -59,30 +63,20 @@
         <div class="rightSec">
             <h1>Contacts(Card View)</h1>
             <p>Hover the mouse to see details</p>
-            <div class="flexi">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="images/avatar1.png" alt="Avatar">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
-                  </div>
-                </div>
-              </div>
+            <div class="card-container">
+            
 
 
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img src="images/avatar1.png" alt="Avatar" >
+                    <div class="name"><span>Peter Parker</span></div>
                   </div>
                   <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h3>Peter Parker</h3> 
+                    <p>peter@gmail.com</p> 
+                    <p>+91-1234567890</p>
                   </div>
                 </div>
               </div>
@@ -93,11 +87,12 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img src="images/avatar2.png" alt="Avatar">
+                    <div class="name"><span>James Cameron</span></div>
                   </div>
                   <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h3>James Cameron</h3> 
+                    <p>james@gmail.com</p> 
+                    <p>+91-1234567890</p>
                   </div>
                 </div>
               </div>
@@ -107,11 +102,12 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img src="images/avatar3.png" alt="Avatar" >
+                    <div class="name"><span>Maria Hill</span></div>
                   </div>
                   <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h3>Maria Hill</h3> 
+                    <p>maria@gmail.com</p> 
+                    <p>+91-1234567890</p>
                   </div>
                 </div>
               </div>
@@ -121,11 +117,12 @@
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
                     <img src="images/avatar4.jpg" alt="Avatar">
+                    <div class="name"><span>John Parry</span></div>
                   </div>
                   <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect & Engineer</p> 
-                    <p>We love that guy</p>
+                    <h3>John Parry</h3> 
+                    <p>john@gmail.com</p> 
+                    <p>+91-1234567890</p>
                   </div>
                 </div>
               </div>
@@ -133,82 +130,75 @@
 
         </div>
 
-   
-     
-    <div class="table-flex">
-        <h1>Contacts (Table View)</h1>
-        <table>
-            <thead>
+
+        <div class="table-flex">
+            <h1>Contacts (Table View)</h1>
+            <table>
                 <tr>
-                    <th> </th>
+                    <th>&nbsp;</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                 </tr>
-            </thead>
-            <tbody>
+                <tr>
+                    <td><img src="images/avatar2.png" alt=""></td>
+                    <td>Peter Parker</td>
+                    <td>peter@gmail.com</td>
+                    <td>547-165-3466</td>
+                </tr>
                 <tr>
                     <td><img src="images/avatar1.png" alt=""></td>
-                    <td>John Doe</td>
-                    <td>john@gmail.com</td>
-                    <td>+91-1234567890</td>
+                    <td>James Cameron</td>
+                    <td>james@gmail.com</td>
+                    <td>234-456-6790</td>
                 </tr>
-
+                <tr>
+                    <td><img src="images/avatar3.png" alt=""></td>
+                    <td>Maria Hill</td>
+                    <td>maria@gmail.com</td>
+                    <td>344-124-3578</td>
+                </tr>
                 <tr>
                     <td><img src="images/avatar1.png" alt=""></td>
-                    <td>John Doe</td>
+                    <td>John Parry</td>
                     <td>john@gmail.com</td>
-                    <td>+91-1234567890</td>
+                    <td>289-194-6789</td>
                 </tr>
+            </table>
+        </div>
+    </main>
 
-                <tr>
-                    <td><img src="images/avatar1.png" alt=""></td>
-                    <td>John Doe</td>
-                    <td>john@gmail.com</td>
-                    <td>+91-1234567890</td>
-                </tr>
-
-                <tr>
-                    <td><img src="images/avatar1.png" alt=""></td>
-                    <td>John Doe</td>
-                    <td>john@gmail.com</td>
-                    <td>+91-1234567890</td>
-                </tr>
-
-                <tr>
-                    <td><img src="images/avatar1.png" alt=""></td>
-                    <td>John Doe</td>
-                    <td>john@gmail.com</td>
-                    <td>+91-1234567890</td>
-                </tr>
-
-                
-        </table>
-    </div>
-    </div>
-
-           
-    </div>
+   
+     
+       
+    
     <footer>
-        <p>Copyright Contact Manager  &copy; 2020</p>
-        <p class="flex-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aspernatur asperiores, magni accusamus consequatur, numquam esse earum molestias repellat obcaecati, laudantium temporibus similique vitae consectetur! Harum, delectus eum! Ipsa, veniam.
-        Modi sunt assumenda aperiam animi et dolorum sapiente ipsa, optio nostrum aliquam alias velit nulla qui esse fugit rem soluta repudiandae omnis? Quis, at mollitia? Error fuga eligendi necessitatibus rerum!
-        Placeat ratione eveniet in odit deserunt voluptates facilis quam, enim dicta excepturi, ipsum commodi corrupti qui expedita, provident explicabo sed eos fugiat! Ratione dolore facilis alias? Cumque eius corporis cupiditate?
-        Minima excepturi delectus consequatur tempora, maxime exercitationem quibusdam laboriosam id illo qui quis? Quo quas exercitationem distinctio vitae officia dicta itaque, labore soluta veniam ducimus at tenetur quos numquam nostrum?
-        Eveniet est, nemo, magnam culpa autem delectus voluptatem dolor earum similique consectetur, totam impedit ipsum. Magni, obcaecati ipsum libero error voluptatem neque nemo repudiandae optio perferendis aliquid consequatur aut aperiam!</p>
-    <p class="flex-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis a quae numquam error, provident adipisci vel voluptatum! Ipsum omnis, porro quisquam vitae asperiores suscipit tempora ab soluta, numquam id rem?
-    Nobis quibusdam unde vero maiores sequi tempore doloremque quisquam velit temporibus. Iste impedit cupiditate unde sequi blanditiis distinctio fugiat incidunt nam. Doloribus nemo quibusdam, ipsa inventore dicta enim dolore nesciunt!
-    Ad cum alias a, accusantium voluptatum beatae quasi blanditiis quibusdam ratione, dolor deserunt temporibus laborum reprehenderit eos error cumque? Dolorum assumenda rem quae iure perspiciatis distinctio ducimus id natus possimus.
-    Minus placeat officiis, accusantium error laboriosam repellendus quo dolorum illo veniam sapiente nam. Aliquid placeat a libero dignissimos explicabo velit illum minima ducimus inventore, rerum assumenda quos, nihil, omnis numquam!
-    Commodi distinctio totam cum possimus debitis at, officiis, ratione, nemo inventore repellat soluta quibusdam quae laudantium eaque quos voluptatibus alias quam temporibus hic error mollitia! Autem laudantium in nostrum minus?</p>
-<p class="flex-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum dolorem nam, ex rem quidem minima corporis architecto consequuntur. Hic, autem illo? Dignissimos nihil ab autem quos recusandae porro? Iusto, dignissimos?
-Quas quidem autem in commodi molestias! Nobis quod, nesciunt ut voluptas aut qui consectetur harum culpa suscipit optio ducimus! Voluptatum necessitatibus dicta labore iure incidunt debitis sint a, iusto vitae.
-Voluptatibus unde atque totam quo asperiores ut, reprehenderit quod nihil consequuntur iste, minima voluptate nisi, aspernatur dicta odio officiis eius veritatis. Unde recusandae minima sed alias odio autem inventore atque.
-Voluptas, laboriosam aliquam nemo neque nostrum reprehenderit nihil. Rerum pariatur modi repellat, velit accusamus aut eligendi fugiat non unde in mollitia expedita, molestias ipsa doloribus culpa! Magni facilis accusamus non!
-Non, eos, nulla eaque deleniti repellat earum amet necessitatibus totam sed natus sint veritatis corrupti, laboriosam libero? Ducimus voluptates facilis magnam optio, non sit quo quis minima aliquam, ea in.</p>    
-</footer>
+        <h3>Copyright ContactManager @ 2020</h3>
+        
+        <div class="footerGrid">
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio porro blanditiis voluptas iste aut doloremque, sequi praesentium illum perspiciatis! Dignissimos, veritatis ipsum. Dicta, iusto. Minima laudantium quod repellendus iure non.
+                Nisi neque distinctio iste, cumque id libero! Magnam esse vel amet sunt soluta explicabo aliquid veritatis nesciunt placeat? Asperiores reprehenderit vitae repudiandae commodi numquam voluptas aperiam ex aliquam error esse.
+                Fuga, asperiores explicabo nulla aliquid minus minima vitae voluptates eveniet quaerat saepe enim ab doloribus repudiandae placeat reiciendis reprehenderit dolore, perspiciatis dolor et aliquam quia error. Veniam, numquam quasi! Veniam.
+            </p>
+       
+            <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus autem voluptatibus soluta doloribus quisquam dicta accusamus dignissimos placeat rerum ipsa. Molestiae atque tempore ullam soluta ducimus dolorem optio velit quidem.
+               Alias vero ea maiores libero voluptatum eius aut in aspernatur quae dolore, eaque quisquam pariatur, perspiciatis harum tempora corrupti vitae ipsum quod officia est cumque minus beatae, inventore ab. Dolorem!
+               Quisquam, reprehenderit. Aliquam debitis ea, omnis dolorem repudiandae qui vero id non dolor fuga illo voluptate enim quod quae ipsa quas libero. Maxime aliquid harum assumenda dolores cum tempora corrupti!
+            </p>
 
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem a, quas quia iste aperiam maiores. Consectetur odio vitae similique dignissimos vel illo dolore iusto numquam, quas aspernatur ullam. Labore, explicabo.
+                Neque molestias, quae, quidem ipsum adipisci quisquam odit dolorem sunt iusto, ipsa corrupti similique laborum dignissimos deserunt magni asperiores ab cupiditate reiciendis omnis culpa? Eos dolorem eaque aliquam dolorum molestias.
+                Nobis tempora qui ab, quam nulla maxime corporis perferendis natus dignissimos, nam rem aliquam ullam consectetur, facilis similique assumenda illum saepe excepturi. Dignissimos eum voluptatibus qui pariatur vero dolorum distinctio.
+            </p>
 
+        </div>
+    </footer>
 </body>
+
+
 
 </html>
