@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <header>
+        <nav>
+           
+            <ul style="list-style-type: none;">
+                <li><label for="checkbox"><i class="fa-solid fa-bars"></i></label></li>
+                <li><input type="checkbox" id="checkbox"></li>
+                <li><a href="" >Contact Manager</a></li>
+                <li><a href="index.html" class="home input">Home</a></li>
+                <li><a href="about.html" class="input">About Us</a></li>
+                <li><a href="contact.html" class="input">Help</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex-nav">
+            <ul>
+                <li><a href="index.html" class="flex-input">Home</a></li>
+                <li><a href="about.html" class="flex-input">About Us</a></li>
+                <li><a href="contact.html" class="flex-input">Help</a></li>
+            </ul>
+        </div>
     <div class="container">
-        <header>
-            <nav>
-                <ul style="list-style-type: none;">
-                    <li><a href="">Contact Manager</a></li>
-                    <li><a href="index.html" class="home">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Help</a></li>
-                </ul>
-            </nav>
+       
         </header>
 
 
@@ -45,18 +59,84 @@
         <div class="rightSec">
             <h1>Contacts(Card View)</h1>
             <p>Hover the mouse to see details</p>
-            <div class="flex-img">
-            <img src="images/avatar1.png" alt="">
-            <img src="images/avatar2.png" alt="">
-            <img src="images/avatar3.png" alt="">   
-            <img src="images/avatar4.jpg" alt="">
-        </div>
+            <div class="flexi">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/avatar1.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/avatar1.png" alt="Avatar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/avatar2.png" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/avatar3.png" alt="Avatar" >
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/avatar4.jpg" alt="Avatar">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect & Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
         </div>
 
-    </div>
+   
      
     <div class="table-flex">
+        <h1>Contacts (Table View)</h1>
         <table>
             <thead>
                 <tr>
@@ -104,6 +184,7 @@
 
                 
         </table>
+    </div>
     </div>
 
            
