@@ -168,12 +168,13 @@ main{
   .name{
     position: relative;
     width: 100%;
-    bottom: 36px;
-    text-align: center;
     color: white;
-    padding-top: 7px;
+    bottom: 35px;
+    text-align: center;
     padding-bottom: 7px;
-    background-color: rgba(0, 0, 0, 0.459);
+    background-color: rgba(0, 0, 0, 0.448);
+    padding-top: 8px;
+   
 }
 
  
