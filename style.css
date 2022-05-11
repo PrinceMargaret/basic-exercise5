@@ -11,7 +11,7 @@ i {
     visibility: hidden;
 }
 
-nav{
+nav {
     width: 100%;
 }
 
@@ -62,22 +62,23 @@ nav a:hover {
 #hamburgerNav {
     visibility: hidden;
 }
-.leftSec{
-   
-   
-   width: 40%;
-   margin-right: 15px ;
-   
-   
+
+.leftSec {
+
+
+    width: 40%;
+    margin-right: 15px;
+
+
 
 }
 
 .Form {
     background-color: #dbd2d2;
 
-  
- 
-    
+
+
+
     height: 100%;
     width: 100%;
 
@@ -96,7 +97,7 @@ nav a:hover {
     margin: 10px;
     margin-bottom: 10px;
     padding: 5px;
- 
+
     outline: none;
     width: 90%;
 
@@ -107,15 +108,16 @@ nav a:hover {
     outline: none;
     border: none;
     margin-top: 15px;
-   
+
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 10%;
     width: 90%;
-   
+
 
 }
-.selectInput{
+
+.selectInput {
     padding-right: 91%;
     width: 90%;
 }
@@ -125,7 +127,7 @@ nav a:hover {
 }
 
 main {
-   
+
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -140,7 +142,7 @@ main {
 .card-container {
     display: flex;
     width: auto;
-   
+
 
 
 
@@ -220,6 +222,9 @@ main {
 
 .table-flex {
     padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -267,8 +272,8 @@ tr:hover {
 
 footer {
     background-color: black;
-    padding-top: lid;
-    padding-bottom: lid;
+    padding-top: 1px;
+    padding-bottom: 1px;
     text-align: center;
     color: white;
 }
@@ -306,25 +311,27 @@ footer p {
         margin-left: 10px;
     }
 
-    .leftSec{
-   
-        
+    .leftSec {
+
+
         width: 100%;
-        
-        
-        
-     
-     }
+
+
+
+
+    }
 
     .input {
         visibility: hidden;
 
     }
+
     .table-flex {
         padding-top: 20px;
         text-align: center;
-    
+
     }
+
     table th {
         padding-right: 30px;
 
