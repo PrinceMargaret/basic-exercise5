@@ -11,9 +11,6 @@ i {
     visibility: hidden;
 }
 
-nav{
-    width: 100%;
-}
 
 nav ul {
     background-color: blue;
@@ -59,15 +56,24 @@ nav a:hover {
 #hamburgerNav {
     visibility: hidden;
 }
+.leftSec{
+   
+   
+   width: 40%;
+   margin-right: 15px ;
+   
+   
 
+}
 
 .Form {
     background-color: #dbd2d2;
 
-    padding-left: 5px;
-   
-    padding: 10px;
-    margin-right: 50px;
+  
+ 
+    
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -84,8 +90,9 @@ nav a:hover {
     margin: 10px;
     margin-bottom: 10px;
     padding: 5px;
-    width: 90%;
+ 
     outline: none;
+    width: 90%;
 
 }
 
@@ -94,11 +101,17 @@ nav a:hover {
     outline: none;
     border: none;
     margin-top: 15px;
-    width: 95%;
+   
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 10%;
+    width: 90%;
+   
 
+}
+.selectInput{
+    padding-right: 91%;
+    width: 90%;
 }
 
 #formBtn:hover {
@@ -106,15 +119,12 @@ nav a:hover {
 }
 
 main {
+   
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0px;
     padding: 10px;
     margin-left: 50px;
     margin-right: 50px;
-width: fit-content;
-
-
 
 }
 
@@ -123,6 +133,8 @@ width: fit-content;
 
 .card-container {
     display: flex;
+    width: auto;
+   
 
 
 
@@ -139,7 +151,7 @@ width: fit-content;
     background-color: transparent;
     width: 150px;
     height: 150px;
-    padding-right: 5px;
+    padding-right: 25px;
     perspective: 1000px;
     margin-top: 30px;
 
@@ -201,7 +213,8 @@ width: fit-content;
 
 
 .table-flex {
-    padding: 10px;
+    padding: 20px;
+
 }
 
 table {
@@ -287,11 +300,24 @@ footer p {
         margin-left: 10px;
     }
 
+    .leftSec{
+   
+        
+        width: 100%;
+        
+        
+        
+     
+     }
+
     .input {
         visibility: hidden;
 
     }
-
+    .table-flex {
+        padding-top: 20px;
+    
+    }
     table th {
         padding-right: 30px;
 
